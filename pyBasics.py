@@ -47,6 +47,7 @@ concat_name=f"{first_name} {last_name}" # METHOD-2
 
 "{0} {1}".format(first_name, last_name)  # METHOD-3
 
+
 print(concat_name)
 
 
