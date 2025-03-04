@@ -123,11 +123,6 @@ custom_result = project_name.custom_function(config)
 print(custom_result)
 ```
 
-### Advanced Features
-
-- **Feature 1:** [Description]
-- **Feature 2:** [Description]
-- **Feature 3:** [Description]
 
 ## Testing
 
