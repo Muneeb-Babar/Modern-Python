@@ -121,8 +121,6 @@ config = {
 
 custom_result = project_name.custom_function(config)
 print(custom_result)
-```
-
 
 ## Testing
 
