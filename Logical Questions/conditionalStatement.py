@@ -155,7 +155,6 @@ else:
 
 units = int(input("Enter the number of units consumed: "))
 
-
 bill_amount = 0
 
 if units <= 100:
