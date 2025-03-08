@@ -141,3 +141,58 @@ if getPassword==securepassword:
 
 else:
     print("Access Denied")
+
+# 11. Write a program to calculate the electricity bill (accept number of unit from user) according to the following criteria :
+#      Unit                                                   Price  
+# uptp 100 units                                              no charge
+# Next 200 units                                              Rs 5 per unit
+# After 200 units                                             Rs 10 per unit
+# (For example if input unit is 350 than total bill amount is Rs.3500
+# (For example if input unit is 97 than total bill amount is Rs.0
+# (For example if input unit is 150 than total bill amount is Rs.750
+
+
+
+units = int(input("Enter the number of units consumed: "))
+
+
+bill_amount = 0
+
+if units <= 100:
+    bill_amount = 0  # No charge for first 100 units
+elif units <= 300:
+    bill_amount = (units - 100) * 5  # Rs 5 per unit for next 200 units
+else:
+    bill_amount = (200 * 5) + (units - 300) * 10  # Rs 5 per unit for next 200 units, Rs 10 per unit after 300 units
+
+print(f"Total electricity bill: Rs.{bill_amount}")
+
+
+# 12. A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+
+# Take following input from user
+# Number of classes held
+# Number of classes attended.
+# And print percentage of class attended
+# Is student is allowed to sit in exam or no
+
+# Modify the above question to allow student to sit if he/she has medical cause.
+# Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly.
+
+
+classes_held = int(input("Enter the number of classes held: "))
+classes_attended = int(input("Enter the number of classes attended: "))
+
+# Calculate attendance percentage
+attendance_percentage = (classes_attended / classes_held) * 100
+
+
+if attendance_percentage >= 75:
+    print("Student is allowed to sit in the exam.")
+else:
+    medical_cause = input("Do you have a medical cause? (Y/N): ").strip().upper()
+    
+    if medical_cause == 'Y':
+        print("Student is allowed to sit in the exam due to medical cause.")
+    else:
+        print("Student is NOT allowed to sit in the exam.")
