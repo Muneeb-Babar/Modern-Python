@@ -102,7 +102,7 @@ my_tuple[0] = 100  # This will raise an error because tuples are immutable
 
 student = {
     "name": "Muneeb",
-    "age": 22,
+    "age": 25,
     "skills": ["Python", "JavaScript","React"]
 }
 
@@ -110,16 +110,16 @@ student = {
 print(student.keys())  # Output: dict_keys(['name', 'age', 'skills'])
 
 # Getting all values
-print(student.values())  # Output: dict_values(['Muneeb', 22, ['Python', 'JavaScript']])
+print(student.values())  # Output: dict_values(['Muneeb', 25, ['Python', 'JavaScript']])
 
 # Getting all key-value pairs
 print(student.items())  
-# Output: dict_items([('name', 'Muneeb'), ('age', 22), ('skills', ['Python', 'JavaScript'])])
+# Output: dict_items([('name', 'Muneeb'), ('age', 25), ('skills', ['Python', 'JavaScript'])])
 
 # Updating dictionary
 student.update({"city": "Karachi"})
 print(student)  
-# Output: {'name': 'Muneeb', 'age': 22, 'skills': ['Python', 'JavaScript'], 'city': 'Karachi'}
+# Output: {'name': 'Muneeb', 'age': 25, 'skills': ['Python', 'JavaScript'], 'city': 'Karachi'}
 
 # Removing an element
 student.pop("age")
