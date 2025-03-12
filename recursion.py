@@ -9,7 +9,8 @@ def recursive_function():
     # some code
 
 '''The code must contain a condition to stop calling itself. Otherwise, the function calls itself infinitely.
-Such function calls are called infinite recursion, and they eventually lead to a stack overflow error.'''
+Such function calls are called infinite recursion, and they eventually lead to a stack overflow error.
+check stack block one by one then print the output'''
 
 
 # Example of a recursive function
