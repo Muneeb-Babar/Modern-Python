@@ -6,9 +6,9 @@
 
 class Car:
     def __init__(self):
-        self.acc=True
-        self.brake=True
-        self.clutch=True
+        self.acc=False
+        self.brake=False
+        self.clutch=False
 
     def start(self):
         self.acc=True
